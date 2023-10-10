@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu's Page</title>
+    <style>
+
+        @media screen and (min-width: 768px) {
+            nav {
+                justify-content: center;
+
+            }
+        }
+        @media screen and (max-width: 767px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        body{
+            background-image:url("desktop-pc.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+
+        header{
+            font-size:20px;
+            flex-basis: 100%;
+            color: #B48B7D;
+
+        }
+        
+        .header-nav{
+            display: flex;
+            flex-wrap: wrap;
+            font-family:'Times New Roman', Times, serif;
+            width: auto;
+            height: auto;
+            text-align: center;
+            justify-content: center;
+            background-color: #DFEFCA;
+            top:0;
+            position: sticky;
+            
+        }
+
+        .navbar{
+            font-size: 20px;
+            flex-basis: 100%;
+        }
+
+        .navbar a:hover {
+            background-color: #f0e7e7;
+            color: #6aaa17;
+            font-size: 40px;
+        }
+
+        .navbar a {
+            color: #B48B7D;   
+            text-decoration: none;
+            transition: all 0.5s;
+            cursor: pointer;  
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        .about-me{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: auto;
+            margin: auto;
+        }
+
+        .education{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: auto;
+            margin: auto;
+            grid-template-areas:
+                "h2 h2"
+                "p1 education-pic"
+                "p2 education-pic"
+                "p3 education-pic";
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2px;
+        }
+
+        .school-name{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .experience{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: auto;
+            margin: auto;
+        }
+
+        h3{
+            text-align:center;
+        }
+        ul{
+            list-style-position: inside;
+        }
+        
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items:end;
+            padding: 3px;
+            margin:center;
+            position: relative;
+        }
+        table{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+			color: white;
+			position:absolute;
+            text-align: top;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header-nav">
+
+        <header>
+            <h1>Welcome to Tu's page</h1>
+
+        </header>
+
+        <nav class="navbar">
+                <a href="home.html">Home
+                    <img src="home-page.jpg" alt="home" width="30" height="30"> </a>
+                <a href="contact.html">Contact
+                    <img src="contect-page.jpg" alt="contect" width="30" height="30"></a>
+                <a href="project.html">Project
+                    <img src="project-page.jpg" alt="project" width="30" height="30"></a>
+                <a href="Personal.html">personal
+                    <img src="personal-page.jpg" alt="personal" width="30" height="30">
+                </a>  
+        </nav>
+    </div>
+
+    <div class="about-me">
+        
+        <h2>About Me</h2>
+
+        <p>Hello, I'm Tu Lu, a passionate software engineer with a drive for creating efficient, 
+            innovative, and impactful technological solutions. <br>
+            I am a master degree student and boast a wealth of knowledge and skills in programming,
+             including Java, Python, C, SQL, 
+             and front-end development with HTML/CSS.</p>
+      </div>
+
+      <div class="education">
+
+        <h2>Education</h2>
+
+        <img src="cs.jpg" alt="education-pic" width="240px" height="240px">
+        <br>
+
+        <p1> 
+            <span class="school-name" >Northeastern University</span>, Seattle, WA
+            <br>
+            Expected Graduation: January 2024
+            <br>
+            Align Master of Science in Computer Science (Master Degree)
+            <br>
+            <br>
+        </p1>
+
+        <img src="transportation.jpg" alt="education-pic" width="240px" height="240px">
+        <br>
+
+        <p2>
+            <span class="school-name" > Lake Washington Institute of Technology</span>, Redmond, WA
+            <br>
+            Graduated: December 2017
+            <br>
+            Bachelor of Transportation and Logistics Management
+            <br>
+            <br>
+        </p2>
+
+        <img src="car-repair.jpg" alt="education-pic" width="240px" height="240px" >
+        <br>
+
+        <p3>
+            <span class="school-name" >Lake Washington Institute of Technology</span>, Kirkland, WA
+            <br>
+            Graduated: December 2015
+            <br>
+            Associate Degree in Automotive Repair
+            <br>
+        </p3>
+        
+      </div>
+      
+      <div class="experience">
+        <h2>Professional Experience
+        </h2>
+        <br>
+
+        <h3>
+            King County Metro, Seattle, WA (Part-Time)
+        </h3>
+            <p4>May 2021 – Present
+                <br>
+                Transit Operator
+                <br>
+                <br>
+                Providing exceptional customer service while safely transporting passengers via designated routes.
+                Ensuring secure, comfortable, efficient, 
+                and courteous transportation service in adherence to published schedules.
+            </p4>
+        <h3>
+            Blueprint Technologies, Seattle, WA
+        </h3>
+
+        <p5>Apr 2018 - May 2022
+            <br>
+            ESS - Escalation Support Specialist | Tech Support Engineer
+            <br>
+            <br>
+            <ul>
+                <li>Offering consulting services for the world's most popular digital distribution platform.</li>
+                <br>
+                <li>Analyzing over 100,000 hijacking or phishing cases to develop sustainable solutions.</li>
+                <br>
+                <li>Resolving network, account safety, and configuration issues for more than 50,000 accounts.</li>
+                <br>
+                <li>Serving as a tier 3-level customer service agent to handle escalated cases.</li>
+                <br>
+                <li>Providing recommendations on departmental standards for systems architecture, 
+                application development, systems integration, data modeling, and testing.</li>
+                <br>
+                <li>Managing the implementation of centralized security master data, 
+                including loading, modeling, storage, cleansing, and integration.</li>
+            </ul>
+            <br>
+        </p5>
+        <h3>
+            Hainan Airline, SEA-TAC, WA
+        </h3>
+        <p6>
+            June 2016 – May 2018
+            <br>
+            Cargo & Baggage Weights & Balance | Ramp Coordinator | Passenger Service Agent
+            <br>
+            <br>
+            <ul>
+                <li>Collecting cargo and baggage weight and configuration data, critical for safety, 
+                    and communicating with the Weight & Balance team in Beijing.</li>
+                <br>
+                <li>Coordinating various under-wing services, such as fuel, food, baggage, and cargo handling.</li>
+                <li>Providing customer services, including reservations, ticketing, 
+                    baggage processing, and passenger assistance.</li>
+            </ul>
+
+        </p6>
+      </div>
+    </div>
+
+    
+    <footer>
+        <img src="footer.jpg" alt="footer" width="60%" height="40%">
+        <table>
+            <tr>
+              <th>Website Creation Information: </th>
+              <th>Tu Lu</th>
+            </tr>
+            <tr>
+              <td>Last Updated Date: </td>
+              <td>10/10/2023</td>
+            </tr>
+            <tr>
+              <td>Friendly Links: </td>
+              <td>: <a href="https://www.w3schools.com/css/">w3schools</a></td>
+            </tr>
+          </table>
+    </footer>
+    
+</body>
+</html>

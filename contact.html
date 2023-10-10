@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My contact</title>
+    <style>
+
+        @media screen and (min-width: 768px) {
+            nav {
+                justify-content: center;
+
+            }
+        }
+        @media screen and (max-width: 767px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        body{
+        background-image:url("contact.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        }
+
+        header{
+        font-size:20px;
+        flex-basis: 100%;
+        color: #fbbd04;
+        }
+        
+        .header-nav{
+            display: flex;
+            flex-wrap: wrap;
+            font-family:'Times New Roman', Times, serif;
+            width: auto;
+            height: auto;
+            text-align: left;
+            justify-content: center;
+            top:0;
+            position: sticky;     
+        }
+
+        .navbar{
+            font-size: 20px;
+            flex-basis: 100%;
+        }
+
+        .navbar a:hover {
+            background-color: #f0e7e7;
+            color:#fb048c;
+            font-size: 40px;
+        }
+
+        .navbar a {
+            color: #fbbd04;   
+            text-decoration: none;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        table{
+            display: grid;
+            top:50px;
+            width: auto;
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+        table a{
+            color: #ffee02;   
+            text-decoration: none;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header-nav">
+
+        <header>
+
+            <h1>Welcome to My contact</h1>
+
+        </header>
+
+        <nav class="navbar">
+                <a href="home.html">Home
+                    <img src="home-page.jpg" alt="home" width="30" height="30"> </a>
+                <a href="contact.html">Contact
+                    <img src="contect-page.jpg" alt="contect" width="30" height="30"></a>
+                <a href="project.html">Project
+                    <img src="project-page.jpg" alt="project" width="30" height="30"></a>
+                <a href="Personal.html">personal
+                    <img src="personal-page.jpg" alt="personal" width="30" height="30">
+                </a>  
+        </nav>
+    </div>
+
+    <table>
+        <tr>
+          <th>Email Address: </th>
+          <th>Tu Lu</th>
+        </tr>
+        <tr>
+          <td>Github: </td>
+          <td>
+            <a href="https://github.com/AMOSTULU/NUMAD23Fa_TuLu">My repo</a></td>
+        </tr>
+        <tr>
+          <td>Cell Phone: </td>
+          <td>: 425-628-9667</a></td>
+        </tr>
+      </table>
+
+    
+</body>
+</html>

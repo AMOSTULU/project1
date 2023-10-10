@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+
+    <style>
+
+        @media screen and (min-width: 768px) {
+            nav {
+                justify-content: center;
+
+            }
+        }
+        @media screen and (max-width: 767px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        body{
+            background-image:url("my-pic.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+
+        header{
+            font-size:20px;
+            flex-basis: 100%;
+            color: #B5FFD4;
+        }
+        
+        .header-nav{
+            display: flex;
+            flex-wrap: wrap;
+            font-family:'Times New Roman', Times, serif;
+            width: auto;
+            height: auto;
+            text-align: center;
+            justify-content: center;
+            top:0;
+            position: sticky;
+            
+        }
+        .navbar{
+            font-size: 20px;
+            flex-basis: 100%;
+        }
+
+        .navbar a:hover {
+            background-color: #f0e7e7;
+            color: #6aaa17;
+            font-size: 40px;
+        }
+
+        .navbar a {
+            color: #B5FFD4;   
+            text-decoration: none;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        .blog{
+            display: flex;
+            flex-wrap: wrap;
+            font-family:'Times New Roman', Times, serif;
+            width: 80%;
+            height: auto;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        .images{
+            display: flex;
+            flex-wrap: wrap;
+            font-family:'Times New Roman', Times, serif;
+            width: 70%;
+            height: auto;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="header-nav">
+
+        <header>
+            <h1>About me</h1>
+
+        </header>
+
+        <nav class="navbar">
+                <a href="home.html">Home
+                    <img src="home-page.jpg" alt="home" width="30" height="30"> </a>
+                <a href="contact.html">Contact
+                    <img src="contect-page.jpg" alt="contect" width="30" height="30"></a>
+                <a href="project.html">Project
+                    <img src="project-page.jpg" alt="project" width="30" height="30"></a>
+                <a href="Personal.html">personal
+                    <img src="personal-page.jpg" alt="personal" width="30" height="30">
+                </a>  
+        </nav>
+    </div>
+
+    <section class="blog">
+
+        <h2>Self Introduction</h2>
+        <article>
+
+            <P>As a part-time bus driver, my typical day unfolds in the following manner: I start my shift in the morning, 
+                greeting the busy commuters, hoping to bring a touch of brightness to their mornings.
+                Then, I finish work around noon and return home, often dedicating my time to studying and completing assignments.
+            </P>
+            
+            <P>During my precious moments of leisure, I have a variety of hobbies, including watching sports, enjoying music, 
+                embracing nature, and exploring new experiences. However, 
+                my life took a significant turn two and a half years ago when my son was born. 
+                Since his arrival, my hobbies have transformed into accompanying him on his journey of growth.
+            </P>
+            
+            <P>I find joy in exploring the wonders of nature together, introducing him to different genres of music 
+                until we find the one he likes the most, and observing him as he plays with our Golden Retriever. 
+                I watched him confidently set forth on his path to face the world, like a little warrior, 
+                as he embarked on his first day of kindergarten, bravely venturing into the unknown without the comforting 
+                presence of his parents.
+            </P>
+
+            <P>In the evenings, after my son falls asleep, my wife and I often cuddle up together, 
+                savoring moments of tranquility while watching movies. These moments provide us with a rare opportunity 
+                to relax and connect amidst our busy lives.
+            </p>
+        </article>
+    </section>
+
+    <section class="images">
+
+        <h2>My Images</h2>
+
+        <div class="image-gallery">
+            <img src="family-time2.jpg" alt="Image 1" width="50%" height="50%">
+            <img src="my-family.jpg" alt="Image 2" width="50%" height="50%">
+        </div>
+
+        <section class="hobbies">
+
+            <h2>My Hobbies and Interests</h2>
+            <ul>
+                <li>Video Games: none</li>
+                <li>Sports: Basketball, American football ball, badminton</li>
+                <li>Movies: A lot</li>
+            </ul>
+
+        </section>
+
+    
+        <footer>
+            <p>&copy; 2023 Tu Lu</p>
+        </footer>
+
+    </section>
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu's Project</title>
+    <style>
+
+        @media screen and (min-width: 768px) {
+            nav {
+                justify-content: right;
+
+            }
+        }
+        @media screen and (max-width: 767px) {
+            nav {
+                flex-direction: column;
+                align-items: right;
+            }
+        }
+
+        body{
+        background-image:url("project.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        }
+
+        header{
+        font-size:20px;
+        flex-basis: 100%;
+        color: #B5FFD4;
+        }
+        
+        .header-nav{
+            display: flex;
+            flex-wrap: wrap;
+            font-family:'Times New Roman', Times, serif;
+            width: auto;
+            height: auto;
+            text-align: left;
+            justify-content: center;
+            top:0;
+            position: sticky;     
+        }
+
+        .navbar{
+            font-size: 20px;
+            flex-basis: 100%;
+        }
+
+        .navbar a:hover {
+            background-color: #f0e7e7;
+            color: #6aaa17;
+            font-size: 40px;
+        }
+
+        .navbar a {
+            color: #B5FFD4;   
+            text-decoration: none;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .the-project{
+
+            display: grid;
+            margin: auto;
+            width: 60%;
+            height: auto;
+            align-items: center;
+
+        }
+
+        .list:first-child{
+            font-style: oblique;
+        }
+
+        .list a{
+            text-decoration: none;
+            transition: all 0.5s;
+            cursor: pointer;  
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="header-nav">
+
+        <header>
+            <h1>My project</h1>
+
+        </header>
+
+        <nav class="navbar">
+                <a href="home.html">Home
+                    <img src="home-page.jpg" alt="home" width="30" height="30"> </a>
+                <a href="contact.html">Contact
+                    <img src="contect-page.jpg" alt="contect" width="30" height="30"></a>
+                <a href="project.html">Project
+                    <img src="project-page.jpg" alt="project" width="30" height="30"></a>
+                <a href="Personal.html">personal
+                    <img src="personal-page.jpg" alt="personal" width="30" height="30">
+                </a>  
+        </nav>
+    </div>
+
+    <div class="the-project">
+        
+        <h2>Software Engineering Projects</h2>
+        <br>
+        <h3>CarAuction - Team Project</h3>
+        <br>
+        <p1>
+            <ul class="list">
+                <li>Project Link:  <a href="https://github.com/Yu-Hsuan-Lin/cs5200_CarAuction">GitHub Link</a></li>
+                <br>
+                <li>Project Description: CarAuction is a transparent online auction platform that leverages SQL databases for efficient data management. 
+                I demonstrated SQL integration skills, optimized data storage and retrieval, and enhanced real-time bidding performance. 
+                This project showcases my SQL proficiency, teamwork, adaptability, and innovative problem-solving.
+                </li>
+            </ul>
+        </p1>
+      </div>
+
+    
+</body>
+</html>
